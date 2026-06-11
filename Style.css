@@ -1,0 +1,177 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Arial", Verdana, Tahoma, Geneva sans-serif;
+    background:#f8f8f8;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:10px;
+}
+
+/* Box generale */
+.container{
+    width:1600px;
+    max-width:100%;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:60px;
+
+    border:1px solid #d8d8d8;
+}
+
+/* Partie gauche */
+.Section-gauche{
+    flex:1;
+    max-width:420px;
+}
+
+.Section-gauche h1{
+    font-size:42px;
+    line-height:1.2;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.sous-titre{
+    color:#777;
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:40px;
+}
+
+/* Champs */
+.form-group{
+    margin-bottom:28px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-size:13px;
+    color:#777;
+}
+
+.form-group input,
+.form-group select{
+    width:100%;
+
+    border:none;
+    border-bottom:1px solid #d8d8d8;
+
+    background:transparent;
+
+    padding:10px 0;
+
+    font-size:15px;
+    color:#444;
+
+    outline:none;
+}
+
+/* Effet focus bleu */
+.form-group input:focus,
+.form-group select:focus{
+    border-bottom:2px solid #69c6f0;
+}
+
+/* Placeholder */
+::placeholder{
+    color:#444;
+}
+
+/* Checkbox */
+.checkbox-group{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin:35px 0;
+}
+
+.checkbox-group label{
+    font-size:14px;
+    color:#777;
+}
+
+.checkbox-group a{
+    color:#69c6f0;
+    text-decoration:none;
+}
+
+.checkbox-group a:hover{
+    text-decoration:underline;
+}
+
+/* Bouton */
+.btn-signup{
+    background:#8fd5f7;
+    color:white;
+
+    border:none;
+
+    padding:14px 50px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+
+    box-shadow:0 5px 12px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+}
+
+.btn-signup:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Partie droite */
+.right-section{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Image */
+.right-section img{
+    max-width:100%;
+    width:490px;
+    height:auto;
+}
+
+/* Responsive */
+@media (max-width:900px){
+
+    .container{
+        flex-direction:column;
+        text-align:center;
+        gap:50px;
+    }
+
+    .left-section{
+        max-width:100%;
+    }
+
+    .checkbox-group{
+        justify-content:center;
+    }
+}
